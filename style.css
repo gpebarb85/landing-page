@@ -19,7 +19,7 @@ body {
 }
 
 .container-one {
-    align-items: center;
+    align-items: space-between;
     padding: 15px;
 }
 
@@ -81,14 +81,15 @@ a {
     flex: none;
 }
 
-.hero-wrapper{
-    width: 900px;
-}
-
 .header {
     display: flex;
-    margin-bottom: 50px;
+    margin: 0 0 40px;
     justify-content: space-between;
+}
+
+.hero-wrapper{
+    max-width: 900px;
+    align-self: center;
 }
 
 .logo {
@@ -97,6 +98,7 @@ a {
     background-color: white;
     border: 1px solid black;
     border-radius: 10px;
+    flex: 0 1 auto;
 }
 
 .header-links {
