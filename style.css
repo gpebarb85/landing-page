@@ -103,6 +103,7 @@ a {
     display: flex;
     margin-left: auto;
     gap: 20px;
+    padding: 0 0;
 }
 
 .header-body {
