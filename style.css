@@ -183,11 +183,11 @@ a {
 
 .action-wrapper {
     display: flex;
-    border: 2px solid black;
     width: 500px;
     background-color: #7faefa;
     padding: 10px 25px;
     justify-content: space-between;
+    border-radius: 10px;
 }
 
 .action-text {
