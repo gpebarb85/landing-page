@@ -18,14 +18,9 @@ body {
             height: min-content;
 }
 
-.container-one, .container-two,
-    .container-three {
-        padding: 20px 500px;
-}
-
-.container-two {
-    background-color: rgb(235, 233, 233);
-    display: flex;
+.container-one {
+    align-items: center;
+    padding: 15px;
 }
 
 .container-one, .container-five {
@@ -37,18 +32,18 @@ body {
     position: relative;
     flex-direction: column;
 }
-    
+
 .container-two {
+    background-color: rgb(235, 233, 233);
     flex-direction: column;
+    padding-bottom: 20px;
 }
 
 .container-three {
     background-color: rgb(243, 131, 131);
-    flex-flow: row-reverse wrap;
-    padding: 20px auto;
 }
 
-.container-four {
+.container-three, .container-four {
     justify-content: center;
     padding: 30px;
 }
@@ -86,9 +81,14 @@ a {
     flex: none;
 }
 
+.hero-wrapper{
+    width: 900px;
+}
+
 .header {
     display: flex;
-    margin-bottom: 75px;
+    margin-bottom: 50px;
+    justify-content: space-between;
 }
 
 .logo {
@@ -101,7 +101,7 @@ a {
 
 .header-links {
     display: flex;
-    margin-left: auto;
+    flex: 0 1 auto;
     gap: 20px;
     padding: 0 0;
 }
@@ -135,12 +135,13 @@ a {
 
 .header-image {
     max-height: 320px;
+    opacity: 0.8;
     flex: 0 1 auto;
 }
 
 .info-image {
-    width: 100px;
-    height: 100px; 
+    width: 200px;
+    height: 200px; 
     border: 2px solid #3882F6;
     border-radius: 10px;
 }
@@ -154,8 +155,10 @@ a {
   
 .info-blocks {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 16px
+    flex: 1 1 auto;
+    gap: 20px
 }
   
 .one, .two, .three, .four{
@@ -168,10 +171,15 @@ a {
 .info {
     max-width: 100px;
     text-align: center;
-    font-size: 14px;
+    font-size: 16px;
     margin-top: 5px;
 }
 
+.quote-wrapper {
+    display:flex;
+    width: 700px;
+    flex-flow: row-reverse wrap;
+}
 .quote {
     font-size: 36px;
     flex: 0 1 auto;    
@@ -184,24 +192,20 @@ a {
 
 .action-wrapper {
     display: flex;
-    width: 500px;
+    width: 800px;
     background-color: #7faefa;
-    padding: 10px 25px;
+    padding: 40px 100px;
     justify-content: space-between;
     border-radius: 10px;
 }
 
-.action-text {
-    max-width: 300px;
-}
-
 .action-header {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
 }
 
 .action-summary {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .footer {
